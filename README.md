@@ -73,6 +73,8 @@ comparison_name: the names for corresponding comparison, mainly used for the fil
 
 ## Results 
 The intermediate output from all procedures are saved in the output directory the user defined, the structure looks like the following:
+
+```
 test_out/
 ├── alignment
 │   ├── ctr1.bowtie2.log
