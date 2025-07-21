@@ -1,0 +1,135 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: group1_1.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.5
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Using Illumina adapter for trimming (count: 3703). Second best hit was Nextera (count: 0)
+Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Output file will be GZIP compressed
+
+
+This is cutadapt 4.5 with Python 3.10.13
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGC group1_1.fastq
+Processing single-end reads on 1 core ...
+Finished in 0.971 s (38.835 µs/read; 1.54 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  25,000
+Reads with adapters:                    13,068 (52.3%)
+Reads written (passing filters):        25,000 (100.0%)
+
+Total basepairs processed:     3,775,000 bp
+Quality-trimmed:                   2,576 bp (0.1%)
+Total written (filtered):      3,639,753 bp (96.4%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 13068 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 33.3%
+  C: 21.4%
+  G: 20.9%
+  T: 24.3%
+  none/other: 0.1%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	5576	6250.0	0	5576
+2	1343	1562.5	0	1343
+3	643	390.6	0	643
+4	308	97.7	0	308
+5	217	24.4	0	217
+6	183	6.1	0	183
+7	170	1.5	0	170
+8	173	0.4	0	173
+9	135	0.1	0	134 1
+10	152	0.0	1	146 6
+11	155	0.0	1	148 7
+12	162	0.0	1	156 6
+13	146	0.0	1	140 6
+14	149	0.0	1	143 6
+15	148	0.0	1	143 5
+16	162	0.0	1	161 1
+17	158	0.0	1	147 11
+18	152	0.0	1	142 10
+19	128	0.0	1	126 2
+20	131	0.0	1	124 7
+21	140	0.0	1	135 5
+22	149	0.0	1	145 4
+23	156	0.0	1	145 11
+24	132	0.0	1	123 9
+25	115	0.0	1	113 2
+26	104	0.0	1	100 4
+27	118	0.0	1	111 7
+28	119	0.0	1	116 3
+29	113	0.0	1	107 6
+30	110	0.0	1	109 1
+31	88	0.0	1	84 4
+32	91	0.0	1	88 3
+33	94	0.0	1	91 3
+34	81	0.0	1	75 6
+35	117	0.0	1	111 6
+36	70	0.0	1	66 4
+37	59	0.0	1	58 1
+38	75	0.0	1	71 4
+39	71	0.0	1	69 2
+40	71	0.0	1	69 2
+41	56	0.0	1	55 1
+42	48	0.0	1	48
+43	61	0.0	1	59 2
+44	37	0.0	1	35 2
+45	73	0.0	1	72 1
+46	8	0.0	1	6 2
+47	33	0.0	1	33
+48	33	0.0	1	32 1
+49	46	0.0	1	46
+50	13	0.0	1	12 1
+51	31	0.0	1	29 2
+52	16	0.0	1	16
+53	18	0.0	1	18
+54	30	0.0	1	28 2
+55	16	0.0	1	16
+56	11	0.0	1	11
+57	10	0.0	1	10
+58	2	0.0	1	2
+59	11	0.0	1	11
+60	4	0.0	1	4
+61	4	0.0	1	4
+62	7	0.0	1	7
+64	4	0.0	1	4
+65	3	0.0	1	3
+66	3	0.0	1	3
+67	1	0.0	1	1
+68	2	0.0	1	2
+69	2	0.0	1	2
+78	4	0.0	1	2 2
+89	1	0.0	1	1
+93	1	0.0	1	1
+94	1	0.0	1	1
+96	1	0.0	1	1
+99	1	0.0	1	1
+102	1	0.0	1	1
+104	1	0.0	1	0 1
+116	1	0.0	1	1
+143	1	0.0	1	1
+150	1	0.0	1	1
+151	7	0.0	1	0 7
+
+RUN STATISTICS FOR INPUT FILE: group1_1.fastq
+=============================================
+25000 sequences processed in total
+

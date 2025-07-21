@@ -1,0 +1,10 @@
+sample,fq1,fq2,single_end,strandedness
+ctr1,ctr1_1.fastq,ctr1_2.fastq,0,forward
+ctr2,ctr2_1.fastq,ctr2_2.fastq,0,forward
+ctr3,ctr3_1.fastq,ctr3_2.fastq,0,forward
+treated1,treated1_1.fastq,treated1_2.fastq,0,forward
+treated2,treated2_1.fastq,treated2_2.fastq,0,forward
+treated3,treated3_1.fastq,treated3_2.fastq,0,forward
+group1,group1_1.fastq,group1_2.fastq,0,forward
+group2,group2_1.fastq,group2_2.fastq,0,forward
+group3,group3_1.fastq,group3_2.fastq,0,forward

@@ -1,0 +1,39 @@
+---
+title: "result report"
+output: html_document
+params:
+  corr_plot:
+    value: x
+  pca_plot:
+    value: x
+  summary_table:
+    value: x
+---
+
+This report the sample correlation, DEG numbers
+```{r, echo=FALSE, results='asis'}
+library(dplyr)
+library(tibble)
+library(ggplot2)
+library(kableExtra)
+
+# Load the data
+sample_data <- read.table(params$summary_table,sep="\t",header=T)
+colnames(sample_data) <- c("sample","raw read pairs#","clean read pairs#","mapping ratio%","unique mapping read pairs#")
+
+sample_data$`unique mapping read pairs#` <- format(as.numeric(sample_data$`unique mapping read pairs#`),big.mark=",")
+
+# Generate HTML table with embedded images
+kable(sample_data, escape = FALSE,format = "html") %>%
+  kable_styling("striped", full_width = FALSE)
+```
+
+Sample pearson corrlataion heatmap based on FPKM normalized expression value
+```{r,out.width="50%"}
+knitr::include_graphics(params$corr_plot)
+```
+
+Sample PCA represents 
+```{r,out.width="50%"}
+knitr::include_graphics(params$pca_plot)
+```

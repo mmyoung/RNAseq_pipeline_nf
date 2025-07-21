@@ -1,0 +1,3 @@
+control_id,control_group,treated_id,treated_group,comparison_name
+ctr1;ctr2;ctr3,ctrl;ctrl;ctrl,treated1;treated2;treated3,treated;treated;treated,treated_vs_ctrl
+ctr1;ctr2;ctr3,ctrl;ctrl;ctrl,group1;group2;group3,treated;treated;treated,group_vs_ctrl

@@ -1,0 +1,13 @@
+fq_dir : "/project/gzy8899/lyang/RNAseq_pipeline_nf/test/raw_data"
+fq_sheet : "/project/gzy8899/lyang/RNAseq_pipeline_nf/test/sample_sheet.tsv"
+output_dir : "${projectDir}/test_out"
+fasta : "/project/gzy8899/references/Arabidopsis_thaliana/Arabidopsis_thaliana.TAIR10.dna.toplevel.fa"
+gtf : "/project/gzy8899/references/Arabidopsis_thaliana/Arabidopsis_thaliana.TAIR10.57.gtf"
+bowtie_idx : "/project/gzy8899/references/Arabidopsis_thaliana/bowtie2_idx/TAIR10"
+DESeq2_coldata : "${projectDir}/DESeq2_coldata.csv"
+
+#Library strandness for featureCounts: 0 (unstranded), 1 (stranded), 2 (reverse stranded). Default: 1
+strandness : 1
+
+#1 (pair-end), 0 (single-end). Default: 1
+pairend : 1
